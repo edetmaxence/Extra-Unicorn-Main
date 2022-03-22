@@ -1,0 +1,94 @@
+@media screen and (min-width: 1200px) {
+
+    .container{
+        width: 60%;
+
+    }
+
+    .menu-burger{
+        display: none;
+    }
+
+
+    .menu-desktop {
+        display: flex;        
+        text-align: center;
+        gap: 40px;
+        list-style: none;
+      
+
+    }
+    .menu-desktop a{
+        text-decoration: flex;
+        color:var(--black);
+
+    }
+  
+
+    header h1{
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    header p{
+        font-size: 1.3rem;
+    }
+
+    main .card-project{
+        position: relative;
+    }
+    main .card-project h2{
+        position: absolute;
+        bottom: 20px;
+        left:20px;
+        width: 30%;
+        font-size: 1.2rem;
+    }
+
+    
+
+    main .btn-light{
+        display: none;
+    }
+
+    main .newsletter{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 50px;
+    }
+    main .newsletter img{
+        width: 50%;   
+     }
+    main .newsletter div{
+        width: 50%;   
+     }
+    
+     main .newsletter h3{
+         font-size: 3rem;
+         margin-bottom: 20px;
+     }
+
+     main .newsletter .btn-dark{
+         display: inline;
+         padding: 1rem;
+     }
+
+
+     footer ul {
+        list-style: none;
+        /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+        display: flex;
+        /*grid-template-columns: repeat(6, 0fr);*/
+        grid-gap: 10px;
+        margin: 50px 0;
+        padding: 0;
+        justify-content: right;
+    }
+     footer ul li  {
+        border: none;
+    }
+
+ 
+
+    
+}

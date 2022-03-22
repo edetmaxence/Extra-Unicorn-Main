@@ -1,0 +1,165 @@
+/*
+ * Importation des polices de caractères
+ * https://fonts.google.com/
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+/* Configuration des variables */
+:root {
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #eeeeee;
+    --gray-light: #fbfbfb;
+    --font-body: 'PT Sans', sans-serif;
+    --font-title: 'Libre Baskerville', serif;
+}
+
+/**
+ * L'étoile "*" est un sélecteur universel visant 
+ * absolument toutes les balises HTML
+ */
+* {
+    margin: 0;
+}
+
+/* Configuration du document */
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    background-color: var(--gray-light);
+}
+
+/**
+ * Configuration de la police pour les balises heading
+ * La virgule permet de spécifier plusieurs éléments et/ou classes CSS utilisant les
+ * mêmes propriétés CSS
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/**
+ * Navigation
+ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Cache le menu desktop sur la version mobile */
+.menu-desktop {
+    display: none;
+}
+
+/**
+ * Header
+ */
+header {
+    text-align: center;
+    padding: 100px 0;
+    /* margin: 100px 0; */
+    /* margin-top: 100px */
+    /* margin-bottom: 100px */
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+header img {
+    width: 80%;
+    margin: 100px auto;
+}
+
+/**
+ * Partie principale
+ */
+main .card-project {
+    margin: 50px 0;
+}
+
+main .card-project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+main .card-project h2 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: normal; /* Enlève l'épaisseur de la police de caractère */
+}
+
+.btn-light {
+    color: var(--black);
+    border: 1px solid var(--black);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+}
+
+/**
+ * Newsletter
+ */
+.newsletter {
+    background-color: var(--gray);
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.newsletter img {
+    width: 100%;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    margin: 50px 0;
+    width: 70%;
+}
+
+.btn-dark {
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 12px 0;
+    text-align: center;
+    display: block;
+}
+
+/**
+ * Footer
+ */
+footer ul {
+    list-style: none;
+    /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 50px 0;
+    padding: 0;
+}
+
+footer ul li {
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    padding: 12px;
+    text-align: center;
+}
+
+footer ul li a {
+    color: var(--black);
+}
